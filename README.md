@@ -1,16 +1,11 @@
 # Password-Generator
 
 ## Installation
-* Main html file: `index.html`
+* HTML file: `index.html`
 * CSS file: `style.css`
 * JavaScript file: `script.js`
 
-**Note:** `index.html` links to the stylesheet and images through the paths listed above. 
-If you change the paths of the above files on your machine, be sure to change the paths in `index.html` accordingly. 
-
 ## Usage
-Open `index.html` in Google Chrome. **Note:** This page does not follow principles of responsive design, 
-and will only render properly on a laptop or desktop moniter.
+Visit the webpage [here](https://ankushchalla.github.io/Password-Generator/) in Google Chrome on either a desktop moniter, tablet, or phone. You must then input the desired length of the password to be generated, and pick at least one criterion from the list given. The length of the password must be between 8 and 128 characters. Once you have selected your desired length and criteria, click on the **Generate Password** button and a randomly generated password fullfilling the given criteria will be displayed. 
 
-## Credits
-The starter code used for the refactor is on [Github](https://ucriverside.bootcampcontent.com/UC-Riverside-Coding-Boot-Camp/ucr-riv-fsf-pt-10-2020-u-c/-/tree/master/01-HTML-Git-CSS/02-Homework/Develop).
+## Screenshots

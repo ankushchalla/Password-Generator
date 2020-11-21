@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator &#54;</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2 id="header">Generate a Password</h2>
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+
+      <!-- Criteria for generated password. -->
+      <form id="form">
+  
+        <!-- Chossing length of password. -->
+        <div class="form-group">
+          <label for="password-length">Choose length of password, must be between 8 and 128 characters. Input
+            must be a single integer.</label>
+          <input type="number" class="form-control" id="password-length">
+        </div>
+
+        <!-- List of checkboxes for each character type. -->
+        <div class="character-types">
+          <label>Choose character type(s). Must choose at least one.</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="lowercase">
+            <label class="form-check-label" for="lowercase">
+              Lowercase.
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="uppercase">
+            <label class="form-check-label" for="uppercase">
+              Uppercase.
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Numeric">
+            <label class="form-check-label" for="Numeric">
+              Numeric.
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="special-chars">
+            <label class="form-check-label" for="special-chars">
+              Special characters (ex: !, %, &).
+            </label>
+          </div>
+        </div>
+        
+
+      </form>
+
+      <!-- Generate password button. -->
+      <div class="card-footer">
+        <button id="generate" class="btn">Generate Password</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <!-- Bootstrap js sources. -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
